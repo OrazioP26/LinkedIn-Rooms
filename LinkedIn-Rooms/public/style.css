@@ -1,0 +1,43 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#videos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+video {
+  width: 320px;
+  height: 240px;
+  background-color: #000;
+  margin: 0 10px;
+  border: 2px solid #ccc;
+}
+
+#controls {
+  margin-top: 20px;
+}
+
+#chat {
+  width: 400px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#chatMessages {
+  border: 1px solid #ccc;
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#chatInput {
+  width: 300px;
+}

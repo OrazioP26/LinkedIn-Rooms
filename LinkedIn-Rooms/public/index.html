@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LinkedIn Rooms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>WebRTC Video and Chat</h1>
+
+    <div id="videos">
+      <video id="localVideo" autoplay playsinline muted></video>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+
+    <div id="controls">
+      <button id="startButton">Start Call</button>
+      <button id="hangupButton">Hang Up</button>
+    </div>
+
+    <div id="chat">
+      <h2>Text Chat</h2>
+      <div id="chatMessages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button id="sendChatBtn">Send</button>
+    </div>
+
+    <!-- Include Socket.IO client -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Your client-side logic -->
+    <script src="client.js"></script>
+  </body>
+</html>
